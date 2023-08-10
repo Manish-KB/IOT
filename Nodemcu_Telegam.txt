@@ -1,17 +1,11 @@
-  /*
-    Rui Santos
-    Complete project details at https://RandomNerdTutorials.com/telegram-esp8266-nodemcu-motion-detection-arduino/
-    
-    Project created using Brian Lough's Universal Telegram Bot Library: https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot
-  */
+
   
   #include <ESP8266WiFi.h>
   #include <WiFiClientSecure.h>
   
   #include <UniversalTelegramBot.h>
   #include <ArduinoJson.h>
-  
-  // Replace with your network credentials
+
   const char* ssid = "ACT_TPlink_2.4GHz";
   const char* password = "deveduk6";
   
@@ -40,7 +34,7 @@
   int freq=300;
   long duration; // variable for the duration of sound wave travel
   int distance;
-  // Indicates when motion is detected
+
   
   
   void setup() {
@@ -56,7 +50,7 @@ digitalWrite(buzz, HIGH);
     client.setTrustAnchors(&cert); // Add root certificate for api.telegram.org
   
    
-    pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+    pinMode(trigPin, OUTPUT); 
     pinMode(echoPin, INPUT); 
   
 
