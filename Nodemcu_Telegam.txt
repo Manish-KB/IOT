@@ -45,7 +45,7 @@ digitalWrite(buzz, HIGH);
     
     Serial.begin(9600);
     configTime(0, 0, "pool.ntp.org");      // get UTC time via NTP
-    client.setTrustAnchors(&cert); // Add root certificate for api.telegram.org
+   // client.setTrustAnchors(&cert); // Add root certificate for api.telegram.org
   
    
     pinMode(trigPin, OUTPUT); 
