@@ -15,9 +15,7 @@
   // Initialize Telegram BOT
   #define BOTtoken "5402135498:AAFnrCsWVTowQfxTTYzpWD5NijhjPZV1i_g"  // your Bot Token (Get from Botfather)
   
-  // Use @myidbot to find out the chat ID of an individual or a group
-  // Also note that you need to click "start" on a bot before it can
-  // message you
+
   #define CHAT_ID "1510589294"
   
   X509List cert(TELEGRAM_CERTIFICATE_ROOT);
